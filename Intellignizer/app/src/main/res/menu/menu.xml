@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.smd.project.ahmad.intellignizer.Home"
+    >
+
+    <item android:id="@+id/camera"
+        android:title="camera"
+        android:orderInCategory="200"
+        android:icon="@drawable/camera"
+        app:showAsAction="always"
+        android:onClick="cameraTap"
+        />
+
+    <item android:id="@+id/gallery"
+        android:title="gallery"
+        android:orderInCategory="100"
+        android:icon="@drawable/gallery"
+        android:onClick="galleryTap"
+        app:showAsAction="always"
+        />
+
+</menu>

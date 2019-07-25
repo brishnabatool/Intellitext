@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.smd.project.ahmad.intellignizer.AboutApp">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"></include>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:paddingLeft="30dp"
+        android:id="@+id/applogo"
+        android:paddingRight="30dp"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/app_bar" />
+
+    <ImageView
+        android:id="@+id/appDivider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/divider"
+        android:layout_alignTop="@+id/applogo"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="70dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="40dp"
+        android:paddingTop="60dp"
+        android:paddingLeft="40dp"
+        android:text="IntelliText is an application that will take pictures of text as input and convert them to an editable text document. Input will be provided using the phone camera or gallery. Users may edit the processed text on their phone, save it, and send it via text or email."
+        android:textStyle="normal"
+        android:textSize="17sp"
+        android:textAlignment="gravity"
+        android:elevation="5dp"
+        android:textColor="@color/colorText"
+
+
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

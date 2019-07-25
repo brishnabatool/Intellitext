@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.smd.project.ahmad.intellignizer.saveFile">
+
+    <include
+        layout="@layout/app_bar_plain"
+        android:id="@+id/app_bar"></include>
+
+
+    <EditText
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:layout_below="@+id/app_bar"
+        android:id="@+id/result_txt"
+        />
+
+    <ImageView
+        android:id="@+id/appDivider"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:src="@drawable/divider"
+        android:layout_below="@+id/result_txt" />
+
+<RelativeLayout
+    android:id="@+id/txt_btn_layout"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:paddingTop="10dp"
+    android:layout_below="@+id/appDivider"
+    >
+    <EditText
+        android:id="@+id/filename_txt"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:hint=" File Name "
+        />
+
+    <Button
+        android:id="@+id/pdf_btn"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text=".pdf"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:theme="@style/MyButton"
+
+
+        android:layout_above="@+id/imageView2"
+        android:layout_toEndOf="@+id/filename_txt"
+        android:layout_marginStart="42dp"
+        android:onClick="savePDF"
+        />
+
+    <Button
+        android:id="@+id/txt_btn"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text=".txt"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:theme="@style/MyButton"
+        android:onClick="saveTXT"
+
+        android:layout_above="@+id/imageView2"
+        android:layout_toEndOf="@+id/pdf_btn"
+        android:layout_marginStart="1dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/filename_txt"
+        android:src="@drawable/crayon"
+        android:id="@+id/imageView2" />
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.smd.project.ahmad.intellignizer.saveFile"
+    >
+
+    <item
+        android:id="@+id/action_share"
+        android:title="Share"
+        android:showAsAction="always"
+        app:showAsAction="always"
+        android:actionProviderClass=
+            "android.widget.ShareActionProvider"
+        android:orderInCategory="1"/>
+
+</menu>
